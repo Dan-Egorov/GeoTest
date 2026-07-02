@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=yes">
+    <title>Гео-викторина</title>
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+</head>
+<body>
+    <div id="game-container">
+        <!-- Меню -->
+        <div id="menu-screen" class="screen">
+            <h1>🌍 Гео-викторина</h1>
+            <button class="menu-btn" data-mode="flag-to-country">🇺🇳 Угадай страну по флагу</button>
+            <button class="menu-btn" data-mode="country-to-capital">🏙️ Угадай столицу по стране</button>
+            <button class="menu-btn" data-mode="country-to-flag">🏁 Угадай флаг по стране</button>
+        </div>
+
+        <!-- Игровой экран -->
+        <div id="game-screen" class="screen hidden">
+            <div id="game-header">
+                <span id="scoreDisplay">⭐ 0</span>
+                <span id="progressDisplay">0/0</span>
+                <span id="livesDisplay">❤️❤️❤️</span>
+                <button id="inGameMenuBtn" class="btn-small" title="В меню">🏠</button>
+            </div>
+            <div class="card" id="questionCard">
+                <div class="question-emoji" id="flagEmoji"></div>
+                <div class="question-text" id="questionLabel"></div>
+                <div class="answers" id="answersContainer"></div>
+            </div>
+            <!-- Экран завершения -->
+            <div id="gameover-card" class="card hidden">
+                <h2 id="gameoverTitle">Игра окончена</h2>
+                <div id="finalScoreText"></div>
+                <div class="gameover-buttons">
+                    <button id="playAgainBtn" class="btn">🔄 Играть ещё</button>
+                    <button id="toMenuBtn" class="btn btn-secondary">🏠 В меню</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://yandex.ru/games/sdk/v2"></script>
+    <script src="code.js"></script>
+</body>
+</html>
