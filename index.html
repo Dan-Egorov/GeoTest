@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=yes">
     <title>Гео-викторина</title>
     <link rel="stylesheet" href="style.css">
-    <style></style>
 </head>
 <body>
     <div id="game-container">
-        <!-- Меню -->
+        <!-- Главное меню (выбор региона + режима) -->
         <div id="menu-screen" class="screen">
             <h1>🌍 Гео-викторина</h1>
+            <select id="regionSelect" class="region-select">
+                <option value="world">🌐 Весь мир</option>
+                <option value="europe">🇪🇺 Европа</option>
+                <option value="asia">🌏 Азия</option>
+                <option value="africa">🌍 Африка</option>
+                <option value="north_america">🌎 Северная Америка</option>
+                <option value="south_america">🌎 Южная Америка</option>
+                <option value="oceania">🏝️ Океания</option>
+            </select>
             <button class="menu-btn" data-mode="flag-to-country">🇺🇳 Угадай страну по флагу</button>
             <button class="menu-btn" data-mode="country-to-capital">🏙️ Угадай столицу по стране</button>
             <button class="menu-btn" data-mode="country-to-flag">🏁 Угадай флаг по стране</button>
@@ -30,7 +38,6 @@
                 <div class="question-text" id="questionLabel"></div>
                 <div class="answers" id="answersContainer"></div>
             </div>
-            <!-- Экран завершения -->
             <div id="gameover-card" class="card hidden">
                 <h2 id="gameoverTitle">Игра окончена</h2>
                 <div id="finalScoreText"></div>
