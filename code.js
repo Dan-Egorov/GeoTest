@@ -1,5 +1,4 @@
 (function() {
-    // Яндекс SDK
     let ysdk = null;
     async function initYandexSDK() {
         try {
@@ -32,7 +31,30 @@
             { flag: '🇳🇱', name: 'Нидерланды', capital: 'Амстердам' },
             { flag: '🇸🇪', name: 'Швеция', capital: 'Стокгольм' },
             { flag: '🇳🇴', name: 'Норвегия', capital: 'Осло' },
-            { flag: '🇵🇱', name: 'Польша', capital: 'Варшава' }
+            { flag: '🇵🇱', name: 'Польша', capital: 'Варшава' },
+            { flag: '🇷🇸', name: 'Сербия', capital: 'Белград' },
+            { flag: '🇲🇪', name: 'Черногория', capital: 'Подгорица' },
+            { flag: '🇫🇮', name: 'Финляндия', capital: 'Хельсинки' },
+            { flag: '🇭🇷', name: 'Хорватия', capital: 'Загреб' },
+            { flag: '🇲🇰', name: 'Северная Македония', capital: 'Скопье' },
+            { flag: '🇨🇿', name: 'Чехия', capital: 'Прага' },
+            { flag: '🇦🇱', name: 'Албания', capital: 'Тирана' },
+            { flag: '🇧🇬', name: 'Болгария', capital: 'София' },
+            { flag: '🇲🇩', name: 'Молдавия', capital: 'Кишинёв' },
+            { flag: '🇵🇹', name: 'Португалия', capital: 'Лиссабон' },
+            { flag: '🇪🇪', name: 'Эстония', capital: 'Таллин' },
+            { flag: '🇱🇹', name: 'Литва', capital: 'Вильнюс' },
+            { flag: '🇱🇻', name: 'Латвия', capital: 'Рига' },
+            { flag: '🇸🇮', name: 'Словения', capital: 'Любляна' },
+            { flag: '🇸🇰', name: 'Словакия', capital: 'Братислава' },
+            { flag: '🇧🇾', name: 'Белоруссия', capital: 'Минск' },
+            { flag: '🇺🇦', name: 'Украина', capital: 'Киев' },
+            { flag: '🇨🇭', name: 'Швейцария', capital: 'Берн' },
+            { flag: '🇱🇺', name: 'Люксембург', capital: 'Люксембург' },
+            { flag: '🇱🇮', name: 'Лихтенштейн', capital: 'Вадуц' },
+            { flag: '🇮🇸', name: 'Исландия', capital: 'Рейкьявик' },
+            { flag: '🇲🇹', name: 'Мальта', capital: 'Валлетта' },
+            { flag: '🇸🇲', name: 'Сан-Марино', capital: 'Сан-Марино' }
         ],
         asia: [
             { flag: '🇦🇫', name: 'Афганистан', capital: 'Кабул' },
@@ -54,7 +76,29 @@
             { flag: '🇯🇵', name: 'Япония', capital: 'Токио' },
             { flag: '🇰🇷', name: 'Южная Корея', capital: 'Сеул' },
             { flag: '🇹🇷', name: 'Турция', capital: 'Анкара' },
-            { flag: '🇸🇦', name: 'Саудовская Аравия', capital: 'Эр-Рияд' }
+            { flag: '🇸🇦', name: 'Саудовская Аравия', capital: 'Эр-Рияд' },
+            { flag: '🇲🇳', name: 'Монголия', capital: 'Улан-Батор' },
+            { flag: '🇵🇰', name: 'Пакистан', capital: 'Исламабад' },
+            { flag: '🇻🇳', name: 'Вьетнам', capital: 'Ханой' },
+            { flag: '🇹🇭', name: 'Таиланд', capital: 'Бангкок' },
+            { flag: '🇮🇱', name: 'Израиль', capital: 'Иерусалим' },
+            { flag: '🇮🇷', name: 'Иран', capital: 'Тегеран' },
+            { flag: '🇲🇾', name: 'Малайзия', capital: 'Куала-Лумпур' },
+            { flag: '🇯🇴', name: 'Иордания', capital: 'Амман' },
+            { flag: '🇮🇶', name: 'Ирак', capital: 'Багдад' },
+            { flag: '🇸🇾', name: 'Сирия', capital: 'Дамаск' },
+            { flag: '🇧🇭', name: 'Бахрейн', capital: 'Манама' },
+            { flag: '🇶🇦', name: 'Катар', capital: 'Доха' },
+            { flag: '🇰🇿', name: 'Казахстан', capital: 'Астана' },
+            { flag: '🇺🇿', name: 'Узбекистан', capital: 'Ташкент' },
+            { flag: '🇰🇬', name: 'Киргизия', capital: 'Бишкек' },
+            { flag: '🇹🇯', name: 'Таджикистан', capital: 'Душанбе' },
+            { flag: '🇹🇲', name: 'Туркменистан', capital: 'Ашхабад' },
+            { flag: '🇳🇵', name: 'Непал', capital: 'Катманду' },
+            { flag: '🇧🇹', name: 'Бутан', capital: 'Тхимпху' },
+            { flag: '🇲🇲', name: 'Мьянма', capital: 'Нейпьидо' },
+            { flag: '🇱🇰', name: 'Шри-Ланка', capital: 'Шри-Джаяварденепура-Котте' },
+            { flag: '🇲🇻', name: 'Мальдивы', capital: 'Мале' }
         ],
         africa: [
             { flag: '🇳🇬', name: 'Нигерия', capital: 'Абуджа' },
@@ -330,7 +374,6 @@
         gameoverCard.classList.add('hidden');
     }
 
-    // Выбор режима
     modeButtons.forEach(btn => {
         btn.addEventListener('click', () => {
             const mode = btn.dataset.mode;
@@ -347,7 +390,6 @@
         });
     });
 
-    // Выход в меню во время игры
     inGameMenuBtn.addEventListener('click', goToMenu);
     inGameMenuBtn.addEventListener('touchend', (e) => {
         e.preventDefault();
